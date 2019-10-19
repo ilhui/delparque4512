@@ -1,19 +1,25 @@
 html {
   scroll-behavior: smooth;
 }
-#section1, #section2, #section3, #section4, #section5, #section6 {
-  padding-top: 60px;
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6 {
+  /* padding-top: 60px; */
 }
 /* Nav */
 
-.fixed {
+.sticky {
   overflow: hidden;
-  background-color: #FFF;
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
   top: 0;
-  width: 100%;
-  height: 60px;
   z-index: 1;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 68px
 }
 
 .navbar {
@@ -21,33 +27,36 @@ html {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .menu_logo {
-  width: 70px;
-  padding: .5rem;
+  width: 80px;
 }
 
 .menu_list {
-  height: 60px;
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .menu_item a {
-  display: block;
-  padding: 18px 16px;
+  font-weight: 600;
+  display: inline;
+  padding: 2.4rem;
+}
+
+.active {
+  border-bottom: 4px solid #090049;
 }
 
 .menu_item a:hover {
-  color: #FFF;
-  background-color: #090049;
+  border-bottom: 4px solid #B9CC01;
 }
 
 /* Header */
 
 header {
-  margin-top: 60px;
   width: 100%;
   background-image:url(../images/imagen_header.png);
   background-size: cover;
