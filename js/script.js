@@ -113,7 +113,6 @@ span5.onclick = function() {
 
 
 
-
 // Get the modal
 var modal6 = document.getElementById("myModal6");
 
@@ -134,3 +133,6 @@ var span6 = document.getElementsByClassName("close6")[0];
 span6.onclick = function() {
   modal6.style.display = "none";
 }
+
+
+// Active link
