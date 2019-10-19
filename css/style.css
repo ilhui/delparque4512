@@ -82,20 +82,31 @@ h3 {
 .menu_list {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
 }
 
-.menu_item a {
+/* .menu_item a {
   display: inline;
-  padding: 2.4rem;
+
   font-weight: 600;
+} */
+
+.btn {
+  border: none;
+  border-radius: 0;
+  color: #090049;
+  height: 68px;
+}
+
+.btn a {
+  display: block;
+  padding: 1rem;
 }
 
 .active {
   border-bottom: 4px solid #090049;
 }
 
-.menu_item a:hover {
+.btn:hover {
   border-bottom: 4px solid #B9CC01;
 }
 
