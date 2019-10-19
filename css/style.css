@@ -20,10 +20,10 @@ h3 {
   color: #090049;
 }
 
-/* Ctas */
+/* Buttons */
 
-.cta_vivelo,
-.cta_invierte {
+.btn_vivelo,
+.btn_invierte {
   font-size: 1.6rem;
   display: inline-block;
   width: 200px;
@@ -34,22 +34,22 @@ h3 {
   border-radius: 5px;
 }
 
-.cta_invierte {
+.btn_invierte {
   background-color: #B9CC01;
   color: #090049;
 }
 
-.cta_vivelo {
+.btn_vivelo {
   background-color: #090049;
   color: #FFF;
 }
 
-.cta_invierte:hover {
+.btn_invierte:hover {
   background-color: #a6b60a;
   color: #090049;
 }
 
-.cta_vivelo:hover {
+.btn_vivelo:hover {
   background-color: #13076a;
   color: #FFF;
 }
@@ -190,33 +190,58 @@ h3 {
 }
 
 
-/* Features */
+/* Section CTA */
 
-.flex {
+.section_cta {
+  text-align: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 4rem;
 }
 
-.flex_item {
+.cta_item{
   flex-grow: 1
 }
 
 .cta_section_invierte {
   background-color: #090049;
   color: #FFF;
-  padding: 6rem;
+  padding: 8rem;
 }
 
 .cta_section_vivelo {
-  background-color: #CCFF00;
-  color: #090049;
-  padding: 6rem;
+  background-color: #B9CC01;
+  padding: 8rem;
 }
 
-footer {
-  background-color: #000;
+.cta_section_invierte h2 {
   color: #FFF;
+}
+
+
+/* Map */
+
+.map {
+  padding-top: 80px;
+}
+
+
+/* Footer */
+
+.footer {
+  padding: 6rem 0;
+  background-color: #070130;
+  color: #FFF;
+}
+
+.footer_title h2 {
+  color: #FFF;
+  margin-bottom: 6rem;
+}
+
+.footer_main {
+  text-align: left;
 }
 
 .footer_logo {
@@ -241,14 +266,26 @@ footer {
   display: inline-block;
 }
 
+/* Form */
+
 .formulario input{
   display: block;
+  color: #000;
 }
 
 input, textarea {
   width: 100%;
+  color: #000;
 }
 
+.btn_form {
+  width: 200px;
+  color: #FFF;
+}
+
+.btn_form:hover {
+  background-color: #92a106;
+}
 
 
 /* Images Gallery*/
