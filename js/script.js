@@ -135,6 +135,70 @@ span6.onclick = function() {
 }
 
 
+
+// Get the modal
+var modal7 = document.getElementById("myModal7");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img7 = document.getElementById("myImg7");
+var modalImg7 = document.getElementById("img07");
+var captionText7 = document.getElementById("caption7");
+img7.onclick = function(){
+  modal7.style.display = "block";
+  modalImg7.src = this.src;
+  captionText7.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span7 = document.getElementsByClassName("close7")[0];
+
+// When the user clicks on <span> (x), close the modal
+span7.onclick = function() {
+  modal7.style.display = "none";
+}
+
+// Get the modal
+var modal8 = document.getElementById("myModal8");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img8 = document.getElementById("myImg8");
+var modalImg8 = document.getElementById("img08");
+var captionText8 = document.getElementById("caption8");
+img8.onclick = function(){
+  modal8.style.display = "block";
+  modalImg8.src = this.src;
+  captionText8.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span8 = document.getElementsByClassName("close8")[0];
+
+// When the user clicks on <span> (x), close the modal
+span8.onclick = function() {
+  modal8.style.display = "none";
+}
+
+// Get the modal
+var modal9 = document.getElementById("myModal9");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img9 = document.getElementById("myImg9");
+var modalImg9 = document.getElementById("img09");
+var captionText9 = document.getElementById("caption9");
+img9.onclick = function(){
+  modal9.style.display = "block";
+  modalImg9.src = this.src;
+  captionText9.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span9 = document.getElementsByClassName("close9")[0];
+
+// When the user clicks on <span> (x), close the modal
+span9.onclick = function() {
+  modal9.style.display = "none";
+}
+
 // Active link
 
 // Add active class to the current button (highlight it)
