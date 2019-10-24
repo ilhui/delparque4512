@@ -114,7 +114,7 @@ h3 {
 
 .header_main {
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 15rem;
 }
 
 .header_title {
@@ -164,7 +164,7 @@ h3 {
 
 .section1 {
   width: 100%;
-  height: 480px;
+  height: 600px;
   background-image:url(../images/imagen_header.png);
   background-size: cover;
   background-position: center;
@@ -241,7 +241,7 @@ h3 {
 /* Footer */
 
 .footer {
-  padding: 6rem 0;
+  padding: 10rem 0;
   background-color: #070130;
   color: #FFF;
 }
