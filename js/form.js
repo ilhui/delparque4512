@@ -4,21 +4,21 @@ $(document).ready(function(){
 
     // validando el nombre
     if( $('#names').val() == '' ){
-      errores += '<p>Escriba un nombre.</p>';
+      errores += '<p>Escribe tu nombre.</p>';
       $('#names').css("border-bottom-color","#F14b3b")
     }else{
       $('#names').css("border-bottom-color","#FFF")
     }
     // validando el correo
     if( $('#email').val() == '' ){
-      errores += '<p>Ingrese un correo.</p>';
+      errores += '<p>Ingrese un correo electrónico.</p>';
       $('#email').css("border-bottom-color","#F14b3b")
     }else{
       $('#email').css("border-bottom-color","#FFF")
     }
     // validando el mensaje
     if( $('#mensaje').val() == '' ){
-      errores += '<p>Escriba un mensaje.</p>';
+      errores += '<p>Escribe un mensaje.</p>';
       $('#mensaje').css("border-bottom-color","#F14b3b")
     }else{
       $('#mensaje').css("border-bottom-color","#FFF")
