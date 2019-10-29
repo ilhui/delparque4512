@@ -64,7 +64,7 @@ h3 {
   z-index: 1;
   width: 100%;
   background-color: #FFFFFF;
-  height: 68px
+  height: 68px;
 }
 
 .navbar {
@@ -79,16 +79,11 @@ h3 {
   width: 80px;
 }
 
-.menu_list {
+.topnav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-
-/* .menu_item a {
-  display: inline;
-
-  font-weight: 600;
-} */
 
 .btn {
   border: none;
@@ -109,6 +104,62 @@ h3 {
 .btn:hover {
   border-bottom: 4px solid #B9CC01;
 }
+
+.icon_menu {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+  }
+  .btn a {
+    padding: .3rem;
+    font-size: 1rem;
+  }
+  .menu_logo {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .sticky  {
+    height: auto;
+  }
+  .navbar {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .topnav{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .topnav.responsive {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .icon_menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    padding-right: 2rem;
+    padding-top: .4rem;
+  }
+  .menu_logo{
+    padding-top: 10px
+  }
+  .btn a {
+    font-size: 1.2rem;
+    }
+}
+
 
 /* Header */
 
@@ -146,6 +197,22 @@ h3 {
 .header_icon img:hover {
   opacity: 1;
 }
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+  .header_title {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 764px) {
+  .header_title {
+    width: 100%;
+    font-size: 4rem;
+  }
+}
+
 
 /* Container & Sections */
 
@@ -200,7 +267,18 @@ h3 {
   background-position: center;
 }
 
-
+/* Larger than mobile */
+@media (max-width: 764px) {
+  .section_header,
+  .section_footer {
+    max-width: 100%;
+  }
+}
+@media (max-width: 764px) {
+.section_background {
+  height: auto;
+  }
+}
 /* Section CTA */
 
 .section_cta {
@@ -209,6 +287,7 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 4rem;
+  width: 100%;
 }
 
 .cta_item{
@@ -229,7 +308,6 @@ h3 {
 .cta_section_invierte h2 {
   color: #FFF;
 }
-
 
 /* Map */
 
@@ -267,13 +345,13 @@ h3 {
   width: 2.3rem;
 }
 
-.footer_item p {
+.footer_item p, .footer_item span{
   width: 300px;
   margin-top: 0;
   padding-top: 0;
   margin-left: 1rem;
 }
-.footer_item img, .footer_item p {
+.footer_item img, .footer_item p , .footer_item span{
   display: inline-block;
 }
 
@@ -314,8 +392,12 @@ input, textarea {
  border-radius: 5px;
  cursor: pointer;
  transition: 0.3s;
- width: 320px;
+ width: 100%;
 }
+
+
+
+
 
 #myImg1:hover {opacity: 0.7;}
 #myImg2:hover {opacity: 0.7;}

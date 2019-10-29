@@ -202,7 +202,7 @@ span9.onclick = function() {
 // Active link
 
 // Add active class to the current button (highlight it)
-var header = document.getElementById("myDIV");
+var header = document.getElementById("myTopnav");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
@@ -213,4 +213,13 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
-// 
+// Nav responsive
+
+function abrirMenu() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

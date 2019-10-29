@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
   <script type="text/javascript" src="js/form.js"></script>
@@ -17,15 +18,15 @@
 <!-- Navegación -->
   <div class="sticky">
     <nav class="navbar" >
-      <a href="index.html"><img class="menu_logo" src="images/logo_azul.png" alt="">
-      </a>
-      <div class="menu_list" id="myDIV">
+      <a href="index.html"><img class="menu_logo" src="images/logo_azul.png" alt=""></a>
+      <div class="topnav" id="myTopnav">
         <button class="btn active"><a class="" href="#section1">Inicio</a></button>
         <button class="btn"><a class="" href="#section2">Proyecto</a></button>
         <button class="btn"><a class="" href="#section3">Departamentos</a></button>
         <button class="btn"><a class="" href="#section4">Ubicación</a></button>
         <button class="btn"><a class="" href="#section5">Contacto</a></button>
       </div>
+      <a href="javascript:void(0);" class="icon_menu" onclick="abrirMenu()"><i class="fa fa-bars"></i></a>
     </nav>
   </div>
   <!-- Header -->
@@ -351,8 +352,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4699462448034!2d-98.24521918547634!3d19.043064687106803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7da89664e99%3A0x912004ac981eadd0!2sDel%20Parque%204512!5e0!3m2!1ses-419!2smx!4v1571228871450!5m2!1ses-419!2smx" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" margin="0"></iframe>
     </div>
   </div>
-
-
   <!-- Footer -->
   <div id="section5" class="footer">
     <div class="container">
@@ -365,7 +364,7 @@
           <ul class="footer_list">
             <li class="footer_item">
               <img src="images/icono_telefono.png" alt="">
-              <p>222 237 4434</p>
+              <span>222 237 4434</span>
             </li>
             <li class="footer_item">
               <img src="images/icono_correo.png" alt="">
