@@ -315,6 +315,18 @@ h3 {
   padding-top: 80px;
 }
 
+.map-link {
+  display: block;
+  color: #090049;
+  padding: 3rem 1rem;
+}
+
+.map-link:hover {
+  display: block;
+  color: #B9CC01;
+  padding: 3rem 1rem;
+}
+
 
 /* Footer */
 
